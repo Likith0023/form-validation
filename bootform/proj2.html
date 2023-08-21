@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>form validation</title>
+  <link rel="stylesheet" href="style2.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+  <form id="myform">
+    <div class="container-fluid"
+      style="max-width: 3000px; padding: 20px; border: 5px solid black;margin-top: 10px; margin-left: 10px;margin-right: 20px; padding-right: 20px;">
+      <div class="row">
+        <div class="col" style="margin-top: 10px;">
+          <label for="">first name</label>
+          <input type="text" class="form-control" placeholder="First name" aria-label="First name" id="firstname">
+          <div class="error"></div>
+        </div>
+        <div class="col" style="margin-top: 10px;">
+          <label for="">last name</label>
+          <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id="lastname">
+          <div class="error"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="margin-top: 10px;">
+          <label for="">email</label>
+          <input type="email" class="form-control" placeholder="yourself@gmail.com" aria-label="First name" id="em">
+          <div class="error">
+          </div>
+        </div>
+        <div class="col" style="margin-top: 10px;">
+          <label for="">password</label>
+          <input type="password" class="form-control" placeholder="password" aria-label="Last name" id="pd">
+          <div class="error"></div>
+        </div>
+      </div>
+      <button
+        style="color:aliceblue; background-color:blue; margin-top: 30px; margin-left: 625px; border-radius: 10px; align-items: center;"
+        id="btn">submit</button>
+    </div>
+  </form><br>
+
+  <h2 style="text-align: center;" id="status"></h2>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="./proj2.js"></script>
+</body>
+
+</html>
